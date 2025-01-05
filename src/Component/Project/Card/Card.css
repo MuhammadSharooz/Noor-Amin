@@ -1,0 +1,62 @@
+.Card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    overflow: hidden;
+  
+}
+#link-tag{
+    transition: .3s ease-in-out all;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background-color: #2D3748; */
+    width: 330px;
+    /* border: 2px solid red; */
+    border: 1px solid #333;
+
+}
+#link-tag:hover{
+    transform: translateY(-10px);
+
+}
+#image{
+    width: 100%;
+    inset: 0;
+    height:200px;
+    border-radius: 10%;
+    
+}
+
+.Card-container img{
+    object-fit: fill;
+    width: 100%;
+    inset: 0;
+    height: 200px;
+    
+}
+.title{
+    margin-top: 8px;
+    font-size: 1.3rem;
+    padding: 10px;
+   
+  
+}
+.title:hover{
+    text-decoration: underline;
+}
+.title, .description{
+    padding-left: 10px;
+    padding-bottom: 20px;
+    color: red;
+
+}
+.description{
+    font-size: 0.8rem;
+    color: rgb(188, 188, 188);
+}
+
+@media only screen and (max-width: 600px){
+    #link-tag{
+        width: 100%;
+    }
+}
